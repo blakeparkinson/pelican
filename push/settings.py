@@ -37,8 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
 ]
+
+PUSH_NOTIFICATIONS_SETTINGS = {
+        "FCM_API_KEY": "AIzaSyAWpxj883r68W3cpcAwB95raJIb1BKLjko",
+        "GCM_API_KEY": "AIzaSyAWpxj883r68W3cpcAwB95raJIb1BKLjko",
+        "APNS_CERTIFICATE": "https://s3-us-west-1.amazonaws.com/blake-deets/aps_development.cer",
+        "WNS_PACKAGE_SECURITY_ID": "[your package security id, e.g: 'ms-app://e-3-4-6234...']",
+        "WNS_SECRET_KEY": "[your app secret key, e.g.: 'KDiejnLKDUWodsjmewuSZkk']",
+}
 
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10
